@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+
+	font-family: "Roboto", sans-serif;
+}
+
+.shadow {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.main-content {
+	padding-top: 15px;
+	padding-bottom: 100px;
+
+
+}
+.form-select{
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+.card-deck{
+    padding-left: 50px;
+max-height: 500px;
+padding-top: 20px;
+
+}
+.card {
+    margin-top: 20px;
+    min-width: 280px;
+    max-width: 280px;
+gap: 10px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+}
+.img-circle {
+	height: 150px;
+	width: 150px;
+	border-radius: 150px;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+/* Nav bar starts here */
+
+nav{  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    z-index: 45;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: #0abdf8;
+    margin-bottom: 50px;
+}
+
+ul{
+    position: sticky;
+    padding: 0;
+    margin: 0;
+   
+}
+ul li{ background: rgb(255, 255, 255);
+    float: left;
+    list-style: none;
+    width:20%;
+    opacity: 0.8;
+}
+ul li a{
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    padding: 14px 26px;
+    text-decoration: none;
+   display: inline-block;/*used to give this a buttonlike vibe centers list item horizonatally*/
+    font-size: 140%;
+    
+}
+
+
+ul li:hover
+{
+    background: rgb(179, 179, 179);
+    
+}
+.dropcontent{
+    background: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    display: none;
+    position: absolute;
+}
+.dropcontent a{
+    display: block;
+    
+    color: black;
+}
+
+.dropdown:hover .dropcontent{
+    display: block;
+}
+header{
+    color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0abdf8;
+   
+}
+/* Nav bar ends here */
+
+/*filter starts here */
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 20px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+ .img-fluid{
+    max-width: 100%;
+    height: 50vh;
+ }
+ html {
+    scroll-behavior: smooth;
+   }
+   
+   .btn-change5{
+    background-color: #3c3c3c;
+    margin-left: 30%;
+    float: left;
+    border:0px;
+    color:#fff;
+    box-shadow: 20 20 20px rgb(135, 18, 252);
+    transform-origin: 50% 50%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    box-shadow: 90px 0px 0 0 rgb(77, 177, 249) inset , -90px 0px 0 rgb(77, 177, 249) inset;
+    border-radius: 15px;
+}
+.btn{
+    display: inline-block;
+}
+.btn-change5:hover{
+    box-shadow: 0px 0px 0 0 rgb(77, 177, 249)  inset , 0px 0px 0 rgb(77, 177, 249)  inset;
+}

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 10vh;
+  flex-direction: row;
+  background-color: #f7f7f7;
+  color: aliceblue;
+  
+}
+.body{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  flex-direction: row;
+  background-color: #f7f7f7;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  
+}
+.container {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  gap : 20px;
+  flex-wrap : wrap;
+}
+.servicebox{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+  position: relative;
+  width: 350px;
+  height: 280px;
+  background : #e0d8f1;
+  border-radius : 25px;
+  overflow: hidden;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 500;
+}
+.details{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--i);
+  transition: .5s;
+}
+.servicebox:hover .icon{
+  top: 30px;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+background: #2c7efaab;
+left: 37%;
+position: relative;
+}
+.icon img {
+  left:25%;
+  top: 20%;
+  display: flex;
+  position: absolute;
+  width: 170.6px;
+  height: 170.6px;
+  transition: .5s;
+}
+.servicebox:hover .icon img{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 15%;
+
+}
+
+.servicebox.one{
+  background-color: rgb(245, 91, 71);
+}
+.servicebox.two{
+  background-color: rgb(255, 61, 255);
+}
+.servicebox.three{
+  background-color: rgb(26, 187, 179);
+}
+.servicebox.four{
+  background-color: rgb(124, 31, 231);
+}
+.servicebox.five{
+  background-color: rgb(250, 43, 60);
+}
+.servicebox.six{
+  background-color: rgb(240, 68, 168);
+}
+.btn{
+  
+  padding-left: 35%;
+}
+button {
+	border-radius: 20px;
+	border: 1px solid #09a5ff;
+	background-color: #2bb1ff;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5% 5%;
+	letter-spacing: 1px;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+.angry-grid {
+  display: grid; 
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  gap: 0px;
+  height: 100vh;
+  
+}
+ 
+#item-0 {
+
+  background-color: #3ecaf9; 
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+  
+}
+#item-1 {
+
+  background-color: #f7f7f7; 
+  grid-row-start: 1;
+  grid-column-start: 4;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+  
+}
+.dv{
+  background-color: rgb(73, 75, 75);
+  color: white;
+}
+#item-2 {
+  text-align: center;
+
+  background-color: #49f8bb; 
+  grid-row-start: 3;
+  grid-column-start: 4;
+
+  grid-row-end: 4;
+  grid-column-end: 6;
+  
+}
+.cards {
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.card{
+  height: 100%;
+  width: 70%;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.img-circle {
+  padding-top: 20px;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+#item-1{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+  align-items: center;
+  justify-content:center;
+ 
+   }
+/* Nav bar starts here */
+
+nav{  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 70%;
+  z-index: 45;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: #0abdf8;
+  margin-bottom: 50px;
+}
+
+ul{
+  position: sticky;
+  padding: 0;
+  margin: 0;
+ 
+}
+ul li{ background: rgb(255, 255, 255);
+  float: left;
+  list-style: none;
+  width:20%;
+  opacity: 0.8;
+}
+ul li a{
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  padding: 14px 26px;
+  text-decoration: none!important;;
+ display: inline-block;/*used to give this a buttonlike vibe centers list item horizonatally*/
+  font-size: 140%;
+  
+}
+a{
+  text-decoration: none!important;
+  color: inherit;
+}
+
+ul li:hover
+{ text-decoration: none!important;;
+  background: rgb(179, 179, 179);
+  color: white;
+  
+}
+.dropcontent{
+  background: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  display: none;
+  position: absolute;
+}
+.dropcontent a{
+  display: block;
+  
+  color: black;
+}
+
+.dropdown:hover .dropcontent{
+  display: block;
+}
+header{
+  color: rgb(250, 250, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/* Nav bar ends here */
+body{
+  padding: 0%;
+  background-color: #2bb1ff;
+}

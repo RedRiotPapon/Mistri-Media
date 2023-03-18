@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: aliceblue;
+            text-decoration: none !important;
+
+        }
+
+        nav {
+            background-color: rgb(56, 56, 56);
+            color: aliceblue;
+            position: sticky;
+            top: 0;
+            
+        }
+
+        nav ul {
+            
+            display: inline-flex;
+            list-style: none;
+            
+        }
+
+        nav ul li {
+            margin: 10px;
+            padding: 20px;position: relative;
+        }
+
+        nav ul li:hover {
+            color: rgb(122, 172, 242);
+            background-color: rgb(97, 97, 97);
+        }
+
+        nav ul li .submenu ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            text-align: left;
+        }
+        nav ul li:hover .submenu {
+            display: block;
+            
+        }
+        nav ul li:hover .submenu  ul {
+            display: block;
+           background-color: black;
+        }
+        nav ul li:hover .submenu  ul li{
+           text-align: left;
+           
+        }
+        nav ul li.flt{
+            position: absolute;
+            right: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+
+            <li><a href="#">Services</a>
+
+                <div class="submenu">
+                    <ul>
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Standard</a></li>
+                    </ul>
+                </div>
+
+
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li class="flt"><a href="#">Blog</a></li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>
