@@ -16,7 +16,7 @@ if (!isset($_SESSION['Email'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>Profile Card UI Design</title>
+  <title>Profile Card User Interface Design</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/css/bootstrap.min.css">
